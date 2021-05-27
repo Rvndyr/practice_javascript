@@ -1,44 +1,44 @@
 // Write a method that prints out the numbers 1 to 1000 that are divisible by 3.
-function printNumbersDivisibleByThree() {
-  var index = 1;
-  while (index <= 1000) {
-    if (index % 3 === 0) {
-      console.log(index);
-    }
-    index += 1;
-  }
-}
-printNumbersDivisibleByThree();
+// function printNumbersDivisibleByThree() {
+//   var index = 1;
+//   while (index <= 1000) {
+//     if (index % 3 === 0) {
+//       console.log(index);
+//     }
+//     index += 1;
+//   }
+// // }
+// printNumbersDivisibleByThree();
 
 // Write a method that accepts an array of strings and prints out every other string.
-function printEveryOtherItem(strings) {
-  var index = 0;
-  strings.forEach(function (string) {
-    if (index % 2 === 0) {
-      console.log(string);
-    }
-    index += 1;
-  });
-}
-printEveryOtherItem(["a", "b", "c", "d", "e"]);
+// function printEveryOtherItem(strings) {
+//   var index = 0;
+//   strings.forEach(function (string) {
+//     if (index % 2 === 0) {
+//       console.log(string);
+//     }
+//     index += 1;
+//   });
+// }
+// printEveryOtherItem(["a", "b", "c", "d", "e"]);
 
 // Write a method that accepts an array of numbers and returns the sum.
-function computeSum(numbers) {
-  var sum = 0;
-  numbers.forEach(function (number) {
-    sum += number;
-  });
-  return sum;
-}
-console.log(computeSum([2, 4, 5]));
+// function computeSum(numbers) {
+//   var sum = 0;
+//   numbers.forEach(function (number) {
+//     sum += number;
+//   });
+//   return sum;
+// }
+// console.log(computeSum([2, 4, 5]));
 
 // Start with the hash: city_populations = {chi: 2700000}
 // Add populations to the city_populations hash for New York City (8.4 million) and San Francisco (800,000).
 // The result should be: {chi: 2700000, nyc: 8400000, sf: 800000}
-var cityPopulations = { chi: 2700000 };
-cityPopulations["nyc"] = 8400000;
-cityPopulations.sf = 800000; // same as cityPopulations["sf"]
-console.log(cityPopulations);
+// var cityPopulations = { chi: 2700000 };
+// cityPopulations["nyc"] = 8400000;
+// cityPopulations.sf = 800000; // same as cityPopulations["sf"]
+// console.log(cityPopulations);
 
 // Write a method that prints out every number from 1 to 100.
 
@@ -62,3 +62,71 @@ console.log(cityPopulations);
 
 // Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array.
 // For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
+// function selectEvenItems(array) {
+//   result = [];
+//   index = 0;
+//   while (index < array.length) {
+//     result.push(array[index]);
+
+//     index += 2;
+//   }
+//   console.log(result);
+// }
+
+// selectEvenItems(["a", "b", "c", "d", "e", "f"]);
+
+// Write a method that accepts one argument - an array of numbers. The method should return the greatest number. For example, if the input is [5, 4, 8, 1, 2], the output should be 8.
+
+// function greatestNum(num) {
+//   current_max = num[0];
+//   num.forEach((element) => {
+//     if (element > current_max) {
+//       current_max = element;
+//       return current_max;
+//     }
+//   });
+//   console.log(current_max);
+// }
+
+// greatestNum([5, 4, 8, 1, 2, 12]);
+// index = 0;
+//   numStart = num[0];
+//   while (index < num.length) {
+//     if (numStart < num[index]) {
+//       numStart = num[index];
+//       return numStart;
+//     }
+//     index++;
+//   }
+
+// # Write a method that accepts a number and returns its factorial. For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
+
+// function factorial(num) {
+//   subOne = 1;
+//   currentNum = num;
+//   for (let i = 0; i < currentNum; i--) {
+//     subOne = currentNum * subOne;
+//     currentNum = currentNum - 1;
+//     }
+//     return currentNum;
+//   }
+//   console.log(currentNum);
+// }
+// factorial(5);
+// for (let i = 0; i < 10; i++) {
+// 	saySomething();
+// }
+
+// result = 1
+// currentNum = num
+// currentNum.forEach((element) =>
+// result = result * currentNum
+// currentNum = currentNum - 1
+// )
+
+setTimeout(() => {
+  console.log("test"),
+    setTimeout(() => {
+      console.log("test2"), 2000;
+    });
+}, 2000);
