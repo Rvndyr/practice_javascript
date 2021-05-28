@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue.js Example</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js" defer></script>
   </head>
   <body>
@@ -14,6 +15,8 @@
       <h2>{{ message }}</h2>
       <p>My name is {{ name }}</p>
       <button v-on:click="changeText()">Change text</button>
+      <h2>Todo Items from API</h2>
+      <div v-for="todo in todos">{{ todo.title }}</div>
     </div>
     <div id="app-5">
       <p>{{ message }}</p>
